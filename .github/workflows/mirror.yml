@@ -1,0 +1,32 @@
+name: CodeCommit Mirroring
+
+##
+# Ignore all branches.
+# To enable code mirroring, change the code below to just:
+# ```yaml
+# on: push
+# ```
+on:
+  push:
+    branches-ignore:
+      - '**'
+
+env:
+  CI: 1
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: mirror
+        uses: ./.github/actions/mirror
+        env:
+          rsa: ${{secrets.iamusercodecommit}}
+          username: ${{secrets.iamusername}}
+          targetrepo: ${{secrets.targetrepository}}
