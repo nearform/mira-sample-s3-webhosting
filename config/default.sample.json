@@ -1,60 +1,18 @@
 {
   "app": {
-    "prefix": "YourName",
-    "name": "My Great App"
+    "prefix": "nf",
+    "name": "s3-webhosting"
   },
-  "baseDomain": "mira-example.com",
-  "cicd": {
-    "account": "CICD_ACCOUNT_NUMBER",
-    "buildspecFile": "infra/buildspec.yaml",
-    "provider": "codecommit",
-    "repositoryUrl": "YOUR_REPOSITORY_URL",
-    "branchName": "master",
-    "codeCommitUserPublicKey": "ssh-rsa YOUR_PUBLIC_KEY",
-    "environmentVariables": [
-      {
-        "name": "FOO",
-        "value": "BAR"
-      }
-    ],
-    "accounts": [
-      "Staging",
-      "Production"
-    ]
+  "dev": {
+    "target": "default"
   },
-  "accounts": [
-    {
-      "name": "Staging",
+  "accounts": {
+    "default": {
       "env": {
-        "account": "123456789",
+        "account": "0000000000000",
         "region": "eu-west-1"
       },
-      "profile": "mira-dev",
-      "withDomain": true,
-      "webAppUrl": "staging.mira-nf.com",
-      "requireManualApproval": false
-    },
-    {
-      "name": "Default",
-      "env": {
-        "account": "123456789",
-        "region": "eu-west-1"
-      },
-      "profile": "default",
-      "withDomain": true,
-      "webAppUrl": "developer.mira-nf.com",
-      "requireManualApproval": false
-    },
-    {
-      "name": "Production",
-      "env": {
-        "account": "123456789",
-        "region": "eu-west-1"
-      },
-      "profile": "mira-prod",
-      "withDomain": true,
-      "webAppUrl": "prod.mira-nf.com",
-      "requireManualApproval": true
+      "profile": "mira-dev"
     }
-  ]
+  }
 }

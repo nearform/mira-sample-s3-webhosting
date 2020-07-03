@@ -1,5 +1,4 @@
-import { AutoDeleteBucket } from '@mobileposse/auto-delete-bucket'
-import { MiraStack } from 'mira'
+import { MiraStack, AutoDeleteBucket } from 'mira'
 import { Construct } from '@aws-cdk/core'
 import {
   BucketDeployment,
