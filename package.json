@@ -17,9 +17,9 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "@aws-cdk/aws-s3-deployment": "1.36.1",
-    "@aws-cdk/core": "1.36.1",
-    "@mobileposse/auto-delete-bucket": "^1.44.0",
-    "mira": "1.0.0"
+    "@aws-cdk/aws-s3-deployment": "1.49.1",
+    "@aws-cdk/core": "1.49.1",
+    "@aws-cdk/cdk-assets-schema": "1.49.1",
+    "mira": "1.1.0"
   }
 }

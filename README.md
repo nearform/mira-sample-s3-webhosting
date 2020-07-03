@@ -7,8 +7,7 @@ The successful deployment of this project will create an S3 bucket with web host
 ## Getting Started
 
 1. Install dependencies with `npm install`
-2. Run `cp config/default.sample.json config/default.json`
-3. Run `npx mira docs` and navigate to [http://localhost:3000/#/quick-start/](http://localhost:3000/#/quick-start/) for further instructions
+2. Run `npx mira docs` and navigate to [http://localhost:3000/#/quick-start/](http://localhost:3000/#/quick-start/) for further instructions
 
 __Note:__ The default port may be already taken, if above website is not available please check your terminal logs for the correct address.
 
