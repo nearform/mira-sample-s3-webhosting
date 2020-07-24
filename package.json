@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "@aws-cdk/aws-s3-deployment": "1.49.1",
-    "@aws-cdk/core": "1.49.1",
     "@aws-cdk/cdk-assets-schema": "1.49.1",
-    "mira": "1.1.0"
+    "@aws-cdk/core": "1.49.1",
+    "mira": "1.2.0"
   }
 }
