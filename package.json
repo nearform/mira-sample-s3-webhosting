@@ -33,6 +33,6 @@
     "@aws-cdk/aws-s3": "1.61.1",
     "@aws-cdk/aws-rds": "1.61.1",
     "@aws-cdk/core": "1.61.1",
-    "mira": "1.2.0"
+    "mira": "1.3.0"
   }
 }
