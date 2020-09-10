@@ -1,0 +1,6 @@
+{
+  "app": {
+    "prefix": "nf",
+    "name": "my-s3-webhosting-example"
+  }
+}
