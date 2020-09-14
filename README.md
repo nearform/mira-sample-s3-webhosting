@@ -17,7 +17,8 @@ __Note:__ By default, repository mirroring is disabled. Go to `.github/workflows
 * `infra/src/index.ts` - your stack definition.
 * `infra/src/permissions.ts` - your stack with IAM permissions needed to deploy the app with CI.
 * `infra/src/buildspec.yaml` - [Build specification reference for CodeBuild].
-
+* `config/default.sample.json` - example configuration file (rename to default.json to use)
+* `config/dev.json` - local development configuration file that overrides default.json.
 
 <!-- Links -->
 [Mira accelerator]: https://github.com/nearform/mira
