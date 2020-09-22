@@ -126,3 +126,5 @@ config/default.json
 
 # IntelliJ
 .idea
+
+mira.old
