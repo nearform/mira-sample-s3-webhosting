@@ -1,6 +1,6 @@
 # Mira S3 Webhosting Sample Application
 
-This application is a very basic application, that provides a ready to use project setup for the [Mira accelerator].
+This application is a very basic application, that provides a ready-to-use project setup for the [Mira accelerator].
 
 The successful deployment of this project will create an S3 bucket with web hosting enabled and a single index.html file in it, which will output a 'hello world' message.
 
@@ -30,8 +30,10 @@ This sample app is recommended primarily for evaluation purposes, and project ow
 
 4. Install the required dependencies
 
-    Make sure you use a supported version of the CDK (__1.61.1__) and all the required dependencies are included in your package.json file.
+    Make sure you use the supported version of the CDK (__1.61.1__) and all the required dependencies are included in your package.json file.
     See the [Mira documentation](#mira-docs) for the full list.
+
+    __Note:__  It is a known constraint of CDK that the usage of its version number must be exact. Range operators for the version will cause your sample to break, e.g. `^1.61.1` is not the same as `1.61.1`.
 
 5. Build
 
