@@ -10,6 +10,8 @@
   "scripts": {
     "build": "tsc -p infra/",
     "dev": "tsc -p infra/ --watch",
+    "domain:app": "mira domain --env=default",
+    "domain:domain": "mira domain --env=domain",
     "deploy": "mira deploy mira-sample-s3-webhosting --file=infra/src/index.js"
   },
   "devDependencies": {
