@@ -67,6 +67,8 @@ export default class S3Webhosting extends MiraStack {
       webAppUrl
     })
 
+    this.createBucketDeployment(siteBucket, distribution)
+
     new CustomDomain(this, {
       source: webAppUrl,
       target: distribution.distributionDomainName
@@ -113,7 +115,7 @@ export default class S3Webhosting extends MiraStack {
           {
             errorCode: 404,
             responseCode: 200,
-            responsePagePath: '/index.html'
+            responsePagePath: '/error.html'
           }
         ]
       }
