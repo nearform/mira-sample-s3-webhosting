@@ -1,0 +1,34 @@
+{
+  "app": {
+    "prefix": "nf",
+    "name": "s3-webhosting"
+  },
+  "domain": {
+    "hostedZoneId": "HOSTED-ZONE-ID",
+    "accounts": [
+      "default",
+      "domain"
+    ]
+  },
+  "dev": {
+    "target": "default"
+  },
+  "accounts": {
+    "default": {
+      "env": {
+        "account": "APPLICATION-ACCOUNT-ID",
+        "region": "eu-west-1"
+      },
+      "profile": "mira-dev",
+      "withDomain": true,
+      "webAppUrl": "s3-sample.mira-nf.com"
+    },
+    "domain": {
+      "env": {
+        "account": "DOMAIN-ACCOUNT-ID",
+        "region": "eu-west-1"
+      },
+      "profile": "mira-domain"
+    }
+  }
+}
