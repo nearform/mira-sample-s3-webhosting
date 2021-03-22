@@ -14,26 +14,26 @@ This sample app is recommended primarily for evaluation purposes, and project ow
 
 2. Clone your newly created repository
 
-3. Ensure that you are using Node.js v12:
+3. Ensure that you are using Node.js v12 (v14 should work too, but is untested here):
 
    ```bash
    % node --version
-   v12.16.3
+   v12.21.0
    ```
 
    or, if using [nvm]:
 
    ```bash
    % nvm use
-   Now using node v12.16.3 (npm v6.14.4)
+   Now using node v12.21.0 (npm v6.14.11)
    ```
 
 4. Install the required dependencies
 
-    Make sure you use the supported version of the CDK (__1.61.1__) and all the required dependencies are included in your package.json file.
+    Make sure you use the supported version of the CDK (__1.89.0__) and all the required dependencies are included in your package.json file.
     See the [Mira documentation](#mira-docs) for the full list.
 
-    __Note:__  It is a known constraint of CDK that the usage of its version number must be exact. Range operators for the version will cause your sample to break, e.g. `^1.61.1` is not the same as `1.61.1`.
+    __Note:__  It is a known constraint of CDK that the usage of its version number must be exact. Range operators for the version will cause your sample to break, e.g. `^1.89.0` is not the same as `1.89.0`.
 
 5. Build
 
